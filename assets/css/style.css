@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,600');
+@page {
+    size: A5;
+    margin: 0;
+}
+.body{
+    background: rgb(56, 56, 56);
+    overflow-x: hidden;
+
+}
+
+.content{
+    width: 1200px;
+    margin: 0 auto
+}
+.info{
+    background: rgb(245, 245, 245);
+    padding: 10px;
+    width: 300px;
+    margin-left:50px;
+    margin-top: 30px;
+    float:left;
+    border-radius:5px;
+    box-shadow: 1px 1px 10px rgb(36, 36, 36)
+}
+.page{
+    background: rgb(255, 255, 255);
+    margin-left:50px;
+    margin-top: 20px;
+    height: 200px;
+    float:left;
+    width: 148.7mm;
+    height: 242mm;
+  
+}
