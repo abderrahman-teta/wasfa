@@ -1,16 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css?family=Cairo:400,600');
+/*@import url('https://fonts.googleapis.com/css?family=Cairo:400,600');*/
 @page {
     size: A5;
     margin: 0;
 }
+html {
+    /*background-color: rgb(56, 56, 56);*/
+    margin: 0px; /* this affects the margin on the HTML before sending to printer */
+  }
 .body{
-    background: rgb(56, 56, 56);
+   /* background: rgb(56, 56, 56);*/
     overflow-x: hidden;
-
-}
-
-.content{
     width: 1200px;
     margin: 0 auto
 }
@@ -28,13 +28,202 @@
     background: rgb(255, 255, 255);
     margin-left:50px;
     margin-top: 20px;
-    height: 200px;
     float:left;
     width: 148.7mm;
-    height: 242mm;
-  
+    height: 210mm;
+  border: 1px solid rgb(128, 128, 128)
+} 
+.head{
+    padding: 5mm;
 }
-ul{
-    width:280px;
+.snake{
+width: 28mm;
+margin-left:-1mm ;
+margin-top: 3mm
+}
+.dr-info{
+    width : 60mm
+}
+.information{
+    margin-left:-8mm ;
+    line-height: 2.6; 
+}
+.ar{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Cairo', sans-serif;
+    color: #0174CF;
+}
+.fr{
+    text-align: center;
+    color: #0174CF;
+    font-size: 22px;
+    font-family: 'Cairo', sans-serif;
+}
+.two{
+    width: 32%;
+    background: #0174CF;
+    margin: auto;
+}
+.title{
+    font-size: 22px;
+    font-family: 'Cairo', sans-serif;
+    color: #0174CF;
+    text-align: center;
+    margin: 0 auto;
+}
+.one{
+    width: 30%;
+    background: #0174CF;
+    margin: auto;
     
 }
+.descr{
+    text-align: center;
+    color: #0174CF;;
+    font-family: 'Cairo', sans-serif;
+}
+.information{
+    padding-left: 10mm
+}
+p{
+    font-size: 16px;
+    color: #0174CF;
+    font-family: 'Cairo', sans-serif;
+}
+span{
+    padding-right: 10px;
+}
+hr{
+    width: 95%;
+    margin: auto;
+    margin-top: 27mm;
+    background: #0174CF;
+}
+.tratment{
+    text-align: center
+}
+.footer-para{
+    text-align: center;
+    
+}
+.fielde {
+    
+    width:100%;
+    padding: 5px 5px;
+    background: white;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+    transition: all 0.4s ease;
+}
+.fielde:focus {
+    outline: none;
+    box-shadow: 0px 6px 8px rgba(75, 72, 72, 0.3);
+}
+.add{
+    margin-top: 30px;
+    width:95%;
+    padding: 10px 5px;
+}
+
+.tratment label {
+    font-size: 20px; 
+    font-weight: 650 
+}
+.box{
+    display: block;
+    color: #0174CF;
+}
+.tab{
+    width: 138mm;
+    margin: auto;
+}
+.caree{
+    margin-top: 0;
+    height: 115mm;
+}
+.para{
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    margin:  0 auto;
+    width: 80%;
+    
+}
+  @media print {
+    
+    .page {
+        background: rgb(255, 255, 255);
+        margin-left:0px;
+        margin-top: 0px;
+        float:none;
+        transform: rotate(90deg);
+        width: 240mm;
+        height: 208mm;
+        margin-top:12mm;
+        margin-left:80mm;
+        border:none
+        
+    }
+    body {
+        margin-top: -30mm;
+        background: rgb(255, 255, 255);
+        
+    }
+    .box{
+        display: none
+    }
+    @page {
+        size: auto;  /* auto is the initial value */
+        margin: 0mm; /* this affects the margin in the printer settings */
+      }
+      html {
+        background-color: #FFFFFF;
+        margin: 0px; /* this affects the margin on the HTML before sending to printer */
+      }
+      body {
+        background: rgb(255, 255, 255);
+        margin: 35mm 0mm 0mm 30mm; /* margin you want for the content */
+      }
+      .info{
+          display: none    
+          }
+          .descr{
+            text-align: left;
+            font-size: 20px;
+            line-height: 2; 
+        }
+        .snake{
+            margin-left:3mm ;
+            margin-top: 3mm;
+            width: 40mm
+
+            }
+            .dr-info{
+                width : 80mm;
+                margin-left:10mm ;
+                text-align: left !important
+            }
+            .information{
+                margin-left:8mm ;
+                line-height: 2.6; 
+                font-size: 20px;
+                
+            }
+            .title{
+                font-size: 35px;
+            }
+        .information p span {
+            font-size: 20px;
+            
+        }
+        .footer-para{
+            font-size: 20px;
+            
+        }
+ } 
