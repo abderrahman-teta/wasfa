@@ -30,7 +30,7 @@ inputs.forEach((input,index) =>{
             const result = findMatch(this.value,data);
             console.log(result);
             var content = '';
-            switch (index) {
+          /* switch (index) {
                 case 3:
 
                     for( i = 0;i<result.length;i++){
@@ -39,16 +39,16 @@ inputs.forEach((input,index) =>{
                     fisrt.innerHTML = content
                     break;
                 
-            }
+           }*/ this.nextSibling.nextSibling.nextSibling.nextSibling.focus()
            
         }
-      if(event.keyCode == 13){
+      /*if(event.keyCode == 13){
             if(index<count-1){
                this.nextSibling.nextSibling.nextSibling.nextSibling.focus()
             }else{
                 window.print()
             }
-       } else if(event.keyCode ==17){
+       } else */if(event.keyCode ==17){
                 window.print()
        }
           
